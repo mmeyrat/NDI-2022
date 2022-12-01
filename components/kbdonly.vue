@@ -15,7 +15,7 @@
 import { ref } from "vue";
 import {onMounted, onUnmounted} from "vue"
 
-let displaying: boolean = false; 
+let holdingShift: boolean = false; 
 
 /**
  * setup un event listener. Affiche key pressed (e.key)
@@ -23,12 +23,12 @@ let displaying: boolean = false;
 function setupListeners()
 {
 
-    window.addEventListener("keypress", handleDownInput);
+    window.addEventListener("keydown", handleDownInput);
     window.addEventListener("keyup", handleUpInput);
 }
 
 function destroyListeners(){
-    window.removeEventListener("keypress", handleDownInput);
+    window.removeEventListener("keydown", handleDownInput);
     window.removeEventListener("keyup", handleUpInput);
 }
 
@@ -37,27 +37,33 @@ function destroyListeners(){
  */
 function handleDownInput(event)
 {
-    if (displaying)
+    if (holdingShift)
     {
-        //
+        console.log("Currently holding down Shift");
     }
     else
     {
-        console.log("Down 4: " + event.key);
-        displaying = true;
+        console.log("Down: " + event.key);
+        if (event.key == "Shift")
+        {
+            holdingShift = true;
+        }
     }
 }
 
 function handleUpInput(event)
 {
-    if (displaying)
+    if (holdingShift)
     {
-        //
+        console.log("Up: " + event.key);
+        if (event.key == "Shift")
+        {
+            holdingShift = false;
+        }
     }
     else
     {
-        console.log("Up 4: " + event.key);
-        displaying = false;
+        
     }
 
     
