@@ -1,3 +1,9 @@
 <template>
-    ceci est la page d'index
+
+    
 </template>
+
+<script setup lang="ts">
+
+
+</script>
