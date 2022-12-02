@@ -8,6 +8,10 @@
         end timer
     </v-btn>
 
+    <v-btn @click="leaderboard()">
+        end timer
+    </v-btn>
+
     <v-btn @click="update_progress_bar(10)">
         10%
     </v-btn>
@@ -50,6 +54,10 @@ import { ref } from 'vue'
                 timer.value = 0
             }
         }, 1000);
+    }
+
+    function leaderboard(){
+        
     }
 
     function end_timer(){
