@@ -395,31 +395,6 @@
   resolved "https://registry.npmjs.org/@nuxt/devalue/-/devalue-2.0.0.tgz"
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
-<<<<<<< HEAD
-=======
-"@nuxt/image@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@nuxt/image/-/image-0.7.1.tgz#3d64f76785c3ecd8983202d814cc5ed5c6dfb96f"
-  integrity sha512-dKCVvRBae9rPHvyaIcC1ypFh+rnNP85WJgzYOE7XMtHQnrGj7X8UiGWTlk2ahcRPBGx1W8JlJuNGBhWZKrf6lQ==
-  dependencies:
-    consola "^2.15.3"
-    defu "^6.0.0"
-    fs-extra "^10.1.0"
-    hasha "^5.2.2"
-    image-meta "^0.1.1"
-    is-https "^4.0.0"
-    lru-cache "^7.10.1"
-    node-fetch-native "^0.1.4"
-    p-limit "^3.1.0"
-    rc9 "^1.2.2"
-    requrl "^3.0.2"
-    semver "^7.3.7"
-    ufo "^0.8.4"
-    upath "^2.0.1"
-  optionalDependencies:
-    ipx "^0.9.9"
-
->>>>>>> add some marvel test files
 "@nuxt/kit@3.0.0-rc.12":
   version "3.0.0-rc.12"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.0.0-rc.12.tgz#637ab3e63d4213b886ab3cda19632bd08bc5ccb6"
@@ -2220,22 +2195,6 @@ hash-sum@^2.0.0:
   resolved "https://registry.npmjs.org/hash-sum/-/hash-sum-2.0.0.tgz"
   integrity sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==
 
-<<<<<<< HEAD
-=======
-hasha@^5.2.2:
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/hasha/-/hasha-5.2.2.tgz#a48477989b3b327aea3c04f53096d816d97522a1"
-  integrity sha512-Hrp5vIK/xr5SkeN2onO32H0MgNZ0f17HRNH39WfL0SYUNOTZ5Lz1TJ8Pajo/87dYGEFlLMm7mIc/k/s6Bvz9HQ==
-  dependencies:
-    is-stream "^2.0.0"
-    type-fest "^0.8.0"
-
-highlight.js@^11.6.0:
-  version "11.7.0"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.7.0.tgz#3ff0165bc843f8c9bce1fd89e2fda9143d24b11e"
-  integrity sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==
-
->>>>>>> add some marvel test files
 hookable@^5.4.1, hookable@^5.4.2:
   version "5.4.2"
   resolved "https://registry.npmjs.org/hookable/-/hookable-5.4.2.tgz"
@@ -2301,14 +2260,6 @@ ignore@^5.2.0:
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.2.1.tgz"
   integrity sha512-d2qQLzTJ9WxQftPAuEQpSPmKqzxePjzVbpAVv62AQ64NTL+wR4JkrVqR/LqFsFEUsHDAiId52mJteHDFuDkElA==
 
-<<<<<<< HEAD
-=======
-image-meta@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/image-meta/-/image-meta-0.1.1.tgz#a84dc7d5f61c7d60e85ec0c3ac81beee8646039b"
-  integrity sha512-+oXiHwOEPr1IE5zY0tcBLED/CYcre15J4nwL50x3o0jxWqEkyjrusiKP3YSU+tr9fvJp33ZcP5Gpj2295g3aEw==
-
->>>>>>> add some marvel test files
 immutable@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.1.0.tgz#f795787f0db780183307b9eb2091fcac1f6fafef"
@@ -2584,7 +2535,6 @@ lilconfig@^2.0.3:
   resolved "https://registry.npmjs.org/lilconfig/-/lilconfig-2.0.6.tgz"
   integrity sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==
 
-<<<<<<< HEAD
 listhen@^0.3.4, listhen@^0.3.5:
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/listhen/-/listhen-0.3.5.tgz#04a0f6dbdab5bbac711992004a37c8306fad3e4e"
@@ -2592,28 +2542,6 @@ listhen@^0.3.4, listhen@^0.3.5:
   dependencies:
     clipboardy "^3.0.0"
     colorette "^2.0.19"
-=======
-listhen@^0.2.15:
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/listhen/-/listhen-0.2.15.tgz#1af0f47f94a09d5f3ba4efa5a4b07df65198bb59"
-  integrity sha512-F/IWj/aJLeokHAIVY+l3JoWRUnbRaf2F0cr+Ybc1YyozMA/yP0C2nf3c0Oi7vAbFvtfiwfWWfP7bIrQc/u5L1A==
-  dependencies:
-    clipboardy "^3.0.0"
-    colorette "^2.0.19"
-    defu "^6.0.0"
-    get-port-please "^2.6.1"
-    http-shutdown "^1.2.2"
-    selfsigned "^2.0.1"
-    ufo "^0.8.5"
-
-listhen@^0.3.4, listhen@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/listhen/-/listhen-0.3.5.tgz#04a0f6dbdab5bbac711992004a37c8306fad3e4e"
-  integrity sha512-suyt79hNmCFeBIyftcLqLPfYiXeB795gSUWOJT7nspl2IvREY0Q9xvchLhekxvQ0KiOPvWoyALnc9Mxoelm0Pw==
-  dependencies:
-    clipboardy "^3.0.0"
-    colorette "^2.0.19"
->>>>>>> add some marvel test files
     defu "^6.1.0"
     get-port-please "^2.6.1"
     http-shutdown "^1.2.2"
@@ -2931,14 +2859,6 @@ nanoid@^4.0.0:
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-4.0.0.tgz"
   integrity sha512-IgBP8piMxe/gf73RTQx7hmnhwz0aaEXYakvqZyE302IXW3HyVNhdNGC+O2MwMAVhLEnvXlvKtGbtJf6wvHihCg==
 
-<<<<<<< HEAD
-=======
-napi-build-utils@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/napi-build-utils/-/napi-build-utils-1.0.2.tgz#b1fddc0b2c46e380a0b7a76f984dd47c41a13806"
-  integrity sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==
-
->>>>>>> add some marvel test files
 nitropack@^0.6.0:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/nitropack/-/nitropack-0.6.1.tgz#882afaff93747df8df4edf86b807470b7cc2704c"
@@ -3002,21 +2922,6 @@ nitropack@^0.6.0:
     unenv "^0.6.2"
     unimport "^0.7.0"
     unstorage "^0.6.0"
-<<<<<<< HEAD
-=======
-
-node-abi@^3.3.0:
-  version "3.30.0"
-  resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-3.30.0.tgz#d84687ad5d24ca81cdfa912a36f2c5c19b137359"
-  integrity sha512-qWO5l3SCqbwQavymOmtTVuCWZE23++S+rxyoHjXqUmPyzRcaoI4lA2gO55/drddGnedAyjA7sk76SfQ5lfUMnw==
-  dependencies:
-    semver "^7.3.5"
-
-node-addon-api@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-5.0.0.tgz#7d7e6f9ef89043befdb20c1989c905ebde18c501"
-  integrity sha512-CvkDw2OEnme7ybCykJpVcKH+uAOLV2qLqiyla128dN9TkEWfrYmxG6C2boDe5KcNQqZF3orkqzGgOMvZ/JNekA==
->>>>>>> add some marvel test files
 
 node-domexception@^1.0.0:
   version "1.0.0"
@@ -3169,11 +3074,7 @@ ohash@^0.1.5:
   resolved "https://registry.yarnpkg.com/ohash/-/ohash-0.1.5.tgz#7ba53b68c41fc72612ed75942b8f6da3b5d5bbda"
   integrity sha512-qynly1AFIpGWEAW88p6DhMNqok/Swb52/KsiU+Toi7er058Ptvno3tkfTML6wYcEgFgp2GsUziW4Nqn62ciuyw==
 
-<<<<<<< HEAD
 ohmyfetch@^0.4.19, ohmyfetch@^0.4.20, ohmyfetch@^0.4.21:
-=======
-ohmyfetch@^0.4.18, ohmyfetch@^0.4.19, ohmyfetch@^0.4.20, ohmyfetch@^0.4.21:
->>>>>>> add some marvel test files
   version "0.4.21"
   resolved "https://registry.npmjs.org/ohmyfetch/-/ohmyfetch-0.4.21.tgz"
   integrity sha512-VG7f/JRvqvBOYvL0tHyEIEG7XHWm7OqIfAs6/HqwWwDfjiJ1g0huIpe5sFEmyb+7hpFa1EGNH2aERWR72tlClw==
@@ -4112,14 +4013,6 @@ strip-final-newline@^2.0.0:
   resolved "https://registry.npmjs.org/strip-final-newline/-/strip-final-newline-2.0.0.tgz"
   integrity sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==
 
-<<<<<<< HEAD
-=======
-strip-json-comments@~2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
-  integrity sha512-4gB8na07fecVVkOI6Rs4e7T6NOTki5EmL7TUduTs6bu3EdnSycntVJ4re8kgZA+wx9IueI2Y11bfbgwtzuE0KQ==
-
->>>>>>> add some marvel test files
 strip-literal@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/strip-literal/-/strip-literal-0.4.2.tgz#4f9fa6c38bb157b924e9ace7155ebf8a2342cbcf"
@@ -4316,11 +4209,7 @@ type-fest@^3.0.0:
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-3.3.0.tgz"
   integrity sha512-gezeeOIZyQLGW5uuCeEnXF1aXmtt2afKspXz3YqoOcZ3l/YMJq1pujvgT+cz/Nw1O/7q/kSav5fihJHsC/AOUg==
 
-<<<<<<< HEAD
 ufo@^0.8.3, ufo@^0.8.6:
-=======
-ufo@^0.8.3, ufo@^0.8.4, ufo@^0.8.5, ufo@^0.8.6:
->>>>>>> add some marvel test files
   version "0.8.6"
   resolved "https://registry.npmjs.org/ufo/-/ufo-0.8.6.tgz"
   integrity sha512-fk6CmUgwKCfX79EzcDQQpSCMxrHstvbLswFChHS0Vump+kFkw7nJBfTZoC1j0bOGoY9I7R3n2DGek5ajbcYnOw==
@@ -4377,7 +4266,6 @@ unimport@^0.6.8:
     scule "^0.3.2"
     strip-literal "^0.4.2"
     unplugin "^0.9.6"
-<<<<<<< HEAD
 
 unimport@^0.7.0:
   version "0.7.1"
@@ -4396,26 +4284,6 @@ unimport@^0.7.0:
     strip-literal "^1.0.0"
     unplugin "^1.0.0"
 
-=======
-
-unimport@^0.7.0:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/unimport/-/unimport-0.7.1.tgz#d0e9323504418c04c823a640f21b8ac136c5447f"
-  integrity sha512-rn/hRpCtFxVVT3T8a6sG738xiA6yp8eFzzMLVr+ebp2FBU1gF0Qo6SfOGrrXATDmKruskhYAvPN7djhydgHU8A==
-  dependencies:
-    "@rollup/pluginutils" "^5.0.2"
-    escape-string-regexp "^5.0.0"
-    fast-glob "^3.2.12"
-    local-pkg "^0.4.2"
-    magic-string "^0.26.7"
-    mlly "^1.0.0"
-    pathe "^1.0.0"
-    pkg-types "^1.0.1"
-    scule "^1.0.0"
-    strip-literal "^1.0.0"
-    unplugin "^1.0.0"
-
->>>>>>> add some marvel test files
 unimport@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/unimport/-/unimport-1.0.1.tgz"
