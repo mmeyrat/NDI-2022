@@ -21,41 +21,6 @@
                     </v-form>
                 </v-card-text>
                 <v-card-actions>
-                    <v-card-text>
-                        <v-row justify="space-around">
-                            <v-col cols="auto">
-
-                                <v-dialog v-model="restDialog" transition="dialog-bottom-transition" max-width="600">
-                                    <template v-slot:activator="{ props }">
-                                        <p v-bind="props">mot de passe oublié ?</p>
-                                    </template>
-                                    <v-card class="elevation-12">
-                                        <v-toolbar dark color="primary">
-                                            <v-toolbar-title>
-                                                reset password
-                                            </v-toolbar-title>
-                                        </v-toolbar>
-                                        <v-card-text>
-                                            <v-form ref="formRecup" lazy-validation>
-                                                <v-row>
-                                                    <v-col cols="12">
-                                                        <v-text-field prepend-icon="mdi-at" v-model="recup.email"
-                                                          label="E-mail" required></v-text-field>
-                                                    </v-col>
-                                                    <v-spacer></v-spacer>
-                                                </v-row>
-                                            </v-form>
-                                        </v-card-text>
-                                        <v-card-actions class="justify-end">
-                                            <v-btn text>Envoyé</v-btn>
-                                        </v-card-actions>
-                                    </v-card>
-                                </v-dialog>
-
-
-                            </v-col>
-                        </v-row>
-                    </v-card-text>
                     <v-spacer></v-spacer>
                     <v-card-actions class="justify-end">
                         <v-btn color="primary" @click="login">Login</v-btn>
@@ -67,12 +32,7 @@
     </div>
     <div v-else>
         <div class="hidden-xs">
-            <v-btn to="/MySpace">
-                Mon Espace
-            </v-btn>
-            <v-btn to="/account">
-                Mon Compte
-            </v-btn>
+            {{user.email}}
             <v-btn icon @click="logout">
                 <v-icon icon="mdi-logout"></v-icon>
             </v-btn>
@@ -102,10 +62,7 @@ const loginStore = useLoginStore();
 const { token, user } = storeToRefs(loginStore);
 const mounted = ref(false);
 
-const restDialog = ref(false)
-const recup = ref({
-    email: '',
-})
+
 
 onMounted(async () => {
     mounted.value = true;

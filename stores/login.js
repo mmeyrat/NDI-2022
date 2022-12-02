@@ -54,7 +54,7 @@ export const useLoginStore = defineStore("login", () => {
       })
         .then((res) => {
           switch (res.status) {
-            case 201:
+            case 200:
               res.json().then((data) => {
                 token.value = data.token;
                 user.value = data.user;
