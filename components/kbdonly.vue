@@ -16,6 +16,7 @@ import { ref } from "vue";
 import {onMounted, onUnmounted} from "vue"
 
 let holdingShift: boolean = false; 
+let actionDone: boolean = false;
 
 /**
  * setup un event listener. Affiche key pressed (e.key)
@@ -39,7 +40,19 @@ function handleDownInput(event)
 {
     if (holdingShift)
     {
-        console.log("Currently holding down Shift");
+        switch (event.key)
+        {
+            case "A":
+                console.log("Click");
+                let links = document.querySelectorAll("button");
+                //links[0].click()
+                console.log(links.length + " links");
+                links.forEach((link) => {link.click();});
+                break;
+
+            default:
+                console.log("Shift+" + event.key);
+        }
     }
     else
     {
@@ -55,7 +68,6 @@ function handleUpInput(event)
 {
     if (holdingShift)
     {
-        console.log("Up: " + event.key);
         if (event.key == "Shift")
         {
             holdingShift = false;
