@@ -1,23 +1,27 @@
 <template>
-    ceci est la page d'index
-
-    <v-btn elevation="2">MAEBA</v-btn>
-    <v-btn elevation="4">MAEBA</v-btn>
-    <v-btn elevation="8">MAEBA</v-btn>
-    <v-btn elevation="16">MAEBA</v-btn>
-    <a href="/">MAEBA LIEN</a> <br>
-    <a href="">doggito</a>
-
-    
+    <cbtn content="Allo" identifier="btn1" @click=test />
+    <cbtn content="Allo2" identifier="btn2" @click=test />
+    <cbtn content="Allo3" identifier="btn3" @click=test />
+    <clink identifier="a3" url="/test3" content="Test3" />
+      <clink identifier="a4" url="/test4" content="Test4" />
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 import {onMounted, onUnmounted} from "vue"
+import { useKbdonlyStore } from "../stores/kbdonly"
+import cbtn from "./cbutton.vue";
+import clink from "./clink.vue"
 
-let holdingShift: boolean = false; 
+let holdingShift = ref(false);
 let actionDone: boolean = false;
 
+
+
+function test()
+{
+    console.log("Hello from kbdonly.vue");
+}
 /**
  * setup un event listener. Affiche key pressed (e.key)
  */
@@ -38,39 +42,73 @@ function destroyListeners(){
  */
 function handleDownInput(event)
 {
-    if (holdingShift)
-    {
-        switch (event.key)
-        {
-            case "A":
-                console.log("Click");
-                let links = document.querySelectorAll("button");
-                //links[0].click()
-                console.log(links.length + " links");
-                links.forEach((link) => {link.click();});
-                break;
+    const kbdonlyStore = useKbdonlyStore();
+    const clickables = kbdonlyStore.clickables;
 
-            default:
-                console.log("Shift+" + event.key);
-        }
+    let orderedClickables = []
+                
+        clickables.forEach((button) =>
+        {
+            let rect = button.getBoundingClientRect();
+            orderedClickables.push([(rect.left + rect.right) / 2, (rect.top + rect.bottom) / 2, button]);
+        });
+        
+
+        orderedClickables.sort((a, b) => 
+        {
+            if (a[0] < b[0] && a[1] < b[1])
+            {
+                return -1;
+            }
+
+            if (a[0] > b[0] && a[1] > b[1])
+            {
+                return 1;
+            }
+
+            return 0;
+        })
+
+    if (holdingShift.value)
+    {
+
+        orderedClickables[event.key.charCodeAt(0)-65][2].click();
     }
+
     else
     {
         console.log("Down: " + event.key);
         if (event.key == "Shift")
         {
-            holdingShift = true;
+            
+
+            orderedClickables.forEach((button, index) =>
+            {
+                if (button[2].textContent.split(" (").length < 2)
+                {
+                    button[2].textContent = button[2].textContent + " (" + String.fromCharCode(index+65) + ")";
+                }
+                
+            })
+            holdingShift.value = true;
         }
     }
 }
 
 function handleUpInput(event)
 {
-    if (holdingShift)
+    if (holdingShift.value)
     {
         if (event.key == "Shift")
         {
-            holdingShift = false;
+            const kbdonlyStore = useKbdonlyStore();
+            const buttons = kbdonlyStore.buttons;
+
+            buttons.forEach((button) =>
+            {
+                button.textContent = button.textContent.split(" (")[0];
+            })
+            holdingShift.value = false;
         }
     }
     else
