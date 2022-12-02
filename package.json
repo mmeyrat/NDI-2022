@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@mdi/font": "^7.0.96",
+    "@nuxt/image": "^0.7.1",
     "nuxt": "3.0.0-rc.12"
   },
   "dependencies": {

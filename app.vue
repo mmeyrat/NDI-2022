@@ -1,5 +1,6 @@
 <template>
   <div>
+<<<<<<< HEAD
     <v-app style="background-color:#F5F5F5">
     <navBarVue />
     <kbdonly/>
@@ -12,6 +13,9 @@
       <clink identifier="a1" url="/test1" content="Test1" />
       <clink identifier="a2" url="/test2" content="Test2" />
     </v-container>
+=======
+    <v-app>
+>>>>>>> add some marvel test files
      <NuxtPage></NuxtPage>
     </v-app>
   </div>
