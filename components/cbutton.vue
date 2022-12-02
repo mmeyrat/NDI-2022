@@ -1,5 +1,5 @@
 <template>
-    <v-btn :id=identifier @click="$emit('click')">{{content}} {{identifier}}</v-btn>
+    <v-btn :id=identifier @click="$emit('click')" :style=addedStyle>{{content}}</v-btn>
 </template>
 
 <script setup lang="ts">
@@ -16,6 +16,11 @@
         {
             type: String,
             require: true
+        },
+        addedStyle:
+        {
+            type:String,
+            default:""
         }
     });
 

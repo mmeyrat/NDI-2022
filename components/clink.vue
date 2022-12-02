@@ -1,5 +1,5 @@
 <template>
-    <a :id=identifier :href=url>{{content}}</a>
+    <a :id=identifier :href=url :style=addedStyle>{{content}}</a>
 </template>
 
 <script setup lang="ts">
@@ -22,6 +22,11 @@
         {
             type: String,
             require: true
+        },
+        addedStyle:
+        {
+            type:String,
+            default: ""
         }
     });
 

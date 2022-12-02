@@ -82,11 +82,11 @@ function handleDownInput(event)
         {
             
 
-            orderedClickables.forEach((button, index) =>
+            orderedClickables.forEach((clickable, index) =>
             {
-                if (button[2].textContent.split(" (").length < 2)
+                if (clickable[2].textContent.split(" (").length < 2)
                 {
-                    button[2].textContent = button[2].textContent + " (" + String.fromCharCode(index+65) + ")";
+                    clickable[2].textContent = clickable[2].textContent + " (" + String.fromCharCode(index+65) + ")";
                 }
                 
             })
@@ -102,11 +102,11 @@ function handleUpInput(event)
         if (event.key == "Shift")
         {
             const kbdonlyStore = useKbdonlyStore();
-            const buttons = kbdonlyStore.buttons;
+            const clickables = kbdonlyStore.clickables;
 
-            buttons.forEach((button) =>
+            clickables.forEach((clickable) =>
             {
-                button.textContent = button.textContent.split(" (")[0];
+                clickable.textContent = clickable.textContent.split(" (")[0];
             })
             holdingShift.value = false;
         }
